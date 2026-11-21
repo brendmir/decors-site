@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Decors — идеи, мастер-классы и вдохновение для хендмейда</title>
+
+<meta name="description" content="Decors — пространство ручного творчества. Идеи для создания свечей, украшений и авторских изделий, советы по выбору материалов, техники рукоделия и мастер-классы.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://brendmir.github.io/decors-site/">
+
+<meta property="og:title" content="Decors — искусство создавать своими руками">
+<meta property="og:description" content="Вдохновение, идеи, материалы и мастер-классы для любителей ручного творчества.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brendmir.github.io/decors-site/">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #faf7f1;
+    --white: #fffefa;
+    --terracotta: #b76d55;
+    --brown: #59473c;
+    --muted: #887b70;
+    --sand: #eee4d8;
+    --sage: #89927b;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--brown);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.75;
+}
+
+a {
+    color: var(--terracotta);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 24px 20px;
+    background: var(--white);
+    border-bottom: 1px solid var(--sand);
+}
+
+.nav {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--terracotta);
+}
+
+.nav a {
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: var(--brown);
+}
+
+.hero {
+    padding: 90px 20px;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 15% 20%, #ead9c9 0, transparent 35%),
+        radial-gradient(ellipse at 85% 80%, #e8dfd0 0, transparent 35%),
+        #f5eee5;
+}
+
+.hero-label {
+    color: var(--terracotta);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font: 12px Arial, sans-serif;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 22px auto;
+    font-size: clamp(38px, 6vw, 66px);
+    line-height: 1.15;
+    font-weight: normal;
+}
+
+.hero p {
+    max-width: 690px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+    font: 16px/1.9 Arial, sans-serif;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: var(--terracotta);
+    color: white;
+    font: 13px Arial, sans-serif;
+    letter-spacing: .5px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    padding: 65px 22px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading span {
+    color: var(--terracotta);
+    font: 11px Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    max-width: 670px;
+    margin: auto;
+    color: var(--muted);
+    font: 14px/1.8 Arial, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--sand);
+    border-radius: 13px;
+    overflow: hidden;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(90, 65, 45, .09);
+}
+
+.card-art {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee4d8;
+    font-size: 58px;
+}
+
+.card:nth-child(2) .card-art {
+    background: #e7e8df;
+}
+
+.card:nth-child(3) .card-art {
+    background: #f0e1d9;
+}
+
+.card-content {
+    padding: 23px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.card p {
+    color: var(--muted);
+    font: 13px/1.8 Arial, sans-serif;
+}
+
+.card a {
+    font: 13px Arial, sans-serif;
+}
+
+.about {
+    background: #eee8de;
+    padding: 65px 25px;
+    text-align: center;
+}
+
+.about-inner {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.about p {
+    color: #76695e;
+    font: 15px/2 Arial, sans-serif;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tip {
+    background: var(--white);
+    padding: 25px;
+    border-left: 3px solid var(--sage);
+    border-radius: 5px 12px 12px 5px;
+}
+
+.tip h3 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.tip p {
+    font: 13px/1.8 Arial, sans-serif;
+    color: var(--muted);
+}
+
+.cta {
+    padding: 65px 20px;
+    text-align: center;
+    background: #e6e4d9;
+}
+
+.cta h2 {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 15px auto 25px;
+    color: #746a60;
+    font: 14px/1.9 Arial, sans-serif;
+}
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #59473c;
+    color: #f9f3eb;
+}
+
+footer .logo {
+    color: #e8c4ad;
+}
+
+footer p {
+    font: 12px/1.8 Arial, sans-serif;
+}
+
+footer a {
+    color: #f1d3bd;
+}
+
+@media(max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .container {
+        padding: 45px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">DECORS</div>
+        <nav>
+            <a href="https://decors.site/">Главная</a>
+            <a href="https://decors.site/">Статьи</a>
+            <a href="https://decors.site/">Мастер-классы</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-label">Творчество начинается с идеи</div>
+
+    <h1>Искусство создавать красоту своими руками</h1>
+
+    <p>
+        Хендмейд — это возможность превратить обычные материалы
+        в нечто особенное. Открывайте новые техники, экспериментируйте
+        с формами и цветами, создавайте авторские изделия
+        и находите вдохновение в каждом творческом проекте.
+    </p>
+
+    <a class="main-button" href="https://decors.site/">
+        ОТКРЫТЬ DECORS
+    </a>
+</section>
+
+<main>
+
+<section class="container">
+    <div class="section-heading">
+        <span>Мир ручной работы</span>
+        <h2>Направления творчества</h2>
+        <p>
+            У каждого творческого направления свой характер,
+            материалы и возможности для самовыражения.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <article class="card">
+            <div class="card-art">🕯️</div>
+            <div class="card-content">
+                <h3>Свечи ручной работы</h3>
+                <p>
+                    Декоративные свечи, натуральный воск,
+                    ароматические композиции, сухоцветы
+                    и оригинальные способы оформления.
+                </p>
+                <a href="https://decors.site/">Изучить идеи →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-art">💎</div>
+            <div class="card-content">
+                <h3>Авторские украшения</h3>
+                <p>
+                    Бисер, натуральные камни, полимерная глина,
+                    металл и текстиль — материалы для создания
+                    необычных аксессуаров.
+                </p>
+                <a href="https://decors.site/">Найти вдохновение →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-art">🎨</div>
+            <div class="card-content">
+                <h3>Дизайн и эстетика</h3>
+                <p>
+                    Цветовые сочетания, фактуры, композиции
+                    и авторские решения, которые помогают
+                    сформировать собственный стиль.
+                </p>
+                <a href="https://decors.site/">Открыть новые идеи →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="about">
+    <div class="about-inner">
+        <div class="hero-label">Творчество без границ</div>
+
+        <h2>Почему хендмейд — это больше, чем рукоделие?</h2>
+
+        <p>
+            Ручная работа позволяет создавать вещи с индивидуальным
+            характером. В отличие от массового производства,
+            авторское изделие может отражать настроение,
+            личные предпочтения и творческий замысел мастера.
+        </p>
+
+        <p>
+            Эксперименты с материалами и техниками помогают
+            развивать воображение, осваивать новые навыки
+            и находить собственный способ самовыражения.
+            Даже небольшой проект может стать началом
+            большого творческого увлечения.
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-heading">
+        <span>Обучение и практика</span>
+        <h2>Мастер-классы и полезные советы</h2>
+        <p>
+            Осваивайте новые техники постепенно,
+            изучайте материалы и превращайте идеи в готовые изделия.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <article class="card">
+            <div class="card-art">📝</div>
+            <div class="card-content">
+                <h3>Пошаговые инструкции</h3>
+                <p>
+                    Подробные этапы изготовления изделий,
+                    от подготовки материалов до финального оформления.
+                </p>
+                <a href="https://decors.site/">Смотреть материалы →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-art">🧵</div>
+            <div class="card-content">
+                <h3>Выбор материалов</h3>
+                <p>
+                    Разбираемся в свойствах материалов,
+                    инструментах и особенностях их применения
+                    в разных техниках рукоделия.
+                </p>
+                <a href="https://decors.site/">Полезные рекомендации →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-art">✨</div>
+            <div class="card-content">
+                <h3>Творческие эксперименты</h3>
+                <p>
+                    Новые способы самовыражения,
+                    необычные сочетания и идеи
+                    для оригинальных авторских работ.
+                </p>
+                <a href="https://decors.site/">Больше вдохновения →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="container">
+    <div class="section-heading">
+        <span>Практика и вдохновение</span>
+        <h2>С чего начать творческий проект?</h2>
+    </div>
+
+    <div class="tips">
+
+        <div class="tip">
+            <h3>01. Найдите идею</h3>
+            <p>
+                Определите, какое изделие хотите создать.
+                Вдохновение можно найти в природе,
+                искусстве, интерьере и окружающих деталях.
+            </p>
+        </div>
+
+        <div class="tip">
+            <h3>02. Подберите материалы</h3>
+            <p>
+                Изучите свойства материалов и инструментов.
+                Для первого проекта лучше выбирать понятные
+                техники и доступные компоненты.
+            </p>
+        </div>
+
+        <div class="tip">
+            <h3>03. Освойте технику</h3>
+            <p>
+                Изучите последовательность работы,
+                подготовьте рабочее место и не бойтесь
+                пробовать новые приёмы.
+            </p>
+        </div>
+
+        <div class="tip">
+            <h3>04. Добавьте индивидуальность</h3>
+            <p>
+                Экспериментируйте с оттенками, формами,
+                фактурами и деталями, чтобы придать
+                изделию собственный характер.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <div class="hero-label">Твоя следующая идея начинается здесь</div>
+
+    <h2>Вдохновляйтесь. Создавайте. Экспериментируйте.</h2>
+
+    <p>
+        Хотите узнать больше о ручном творчестве,
+        открыть новые техники и найти интересные мастер-классы?
+        Загляните на Decors — блог для тех, кто любит создавать
+        красивые и необычные вещи своими руками.
+    </p>
+
+    <a class="main-button" href="https://decors.site/">
+        ПЕРЕЙТИ НА DECORS.SITE
+    </a>
+</section>
+
+</main>
+
+<footer>
+    <div class="logo">DECORS</div>
+
+    <p>Пространство идей, вдохновения и ручного творчества.</p>
+
+    <p>
+        <a href="https://decors.site/">Официальный сайт Decors.site</a>
+    </p>
+
+    <p>© Decors — искусство создавать своими руками.</p>
+</footer>
+
+</body>
+</html>
